@@ -1,1 +1,191 @@
+<html>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <style>
+        body,
+        html {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+        }
+
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            /* Di bawah ini (yang diapit kutip) adalah background header yaitu gambar foto pahlawan nasional, silakan ganti dengan file lain*/
+            background-image: url("barang.jpg");
+
+            min-height: 75%;
+        }
+
+        .menu {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Links (sit on top) Daftar link yang ada di bagian atas halaman -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block w3-black">Beranda</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#10november" class="w3-button w3-block w3-black">toko online makanan dan minuman </a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#namapahlawan" class="w3-button w3-block w3-black">jenis jenis prodak makanan ringan dan minuman sehat</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#pesan" class="w3-button w3-block w3-black">yu order klik di sini</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with image/ Header dengan gambar -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+            <span class="w3-tag">toko online makanan dan minuman sehat</span>
+        </div>
+        <div class="w3-display-middle w3-center">
+            <span class="w3-text-white" style="font-size:90px">toko<br>online makanan dan minuman</span>
+        </div>
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+            <span class="w3-text-white">toko online kang sopian munawar!</span>
+        </div>
+    </header>
+
+    <!-- Menambahkan warna background dan tulisan besar di seluruh halaman -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+        <!-- Kontainer 10 November -->
+        <div class="w3-container" id="10november">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">toko online makanan dan minuman sehat</span></h5>
+                <p>
+                    toko online makanan dan minuman sehat yang di produk oleh brand ternama dengan sertifikat halal serta telah di uji oleh leb yang ahli .</p>
+                <p>toko ini di kelola oleh sopian munawar seorang disabilitas netra yang baru menginjak 3 tahun , untuk mencukupi kebutuhan hidup , sopian munawar berjuang untuk bisa bersaing di jaman modern ini yang sudah penuh dengan digitalisasi .</p>
+                <!-- Di bawah ini ada tempat untuk menaruh quote/ kata mutiara-->
+                <div class="w3-panel w3-leftbar w3-light-grey">
+                    <p><i>"1 produk yang anda order adalah 1 kebutuhan yang bisa saya cukupi"</i></p>
+                    <p>sopian munawar</p>
+                </div>
+                <!-- Di bawah ini adalah gambar pahlawan nasional. Silakan ganti bagian yang diapit quote pada atribut src-->
+                <img alt="Gambar jenis jenis makanan dan minuman sehat"
+                    src="barang.jpg"
+                    style="width:100%;max-width:1000px" class="w3-margin-top">
+
+            </div>
+        </div>
+
+        <!-- Kontainer Nama Pahlawan -->
+        <div class="w3-container" id="namapahlawan">
+            <div class="w3-content" style="max-width:700px">
+
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Jenis Jenis Produk Makanan Dan Minuman Sehat</span></h5>
+
+                <div class="w3-row w3-center w3-card w3-padding">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'PahlawanNasional');" id="myLink">
+                        <div class="w3-col s6 tablink">macam macam krupuk</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'PahlawanDaerah');">
+                        <div class="w3-col s6 tablink">Minuman Susu yohert cimori</div>
+                    </a>
+                </div>
+
+                <div id="PahlawanNasional" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>krupuk ikan tengiri</h5>
+                    <p class="w3-text-grey">krupuk ini asli dari bahan rempah dengan olahan ikan tengiri yang masih segar dan harumnya sangat khas dan sangat gurih dan cocok untuk teman makan dengan yang berkuah atau untuk cemilan di saat lagi nyantai</p><br>
+
+                    <h5>Krupuk kulit atau di sebut dengan dorokdok</h5>
+                    <p class="w3-text-grey">krupuk kulit ini sangat nikmat saat di campur dengan yang pedas dan berkuah ,bisa juga di jadikan sayur dengan toping kacang gajih atau kacang merah .sangat gurih dan nikmat kulit asli sapi yang di olah secara berkala dengan uji leb serta hala</p><br>
+
+                    <h5>makanan ringan parian snack</h5>
+                    <p class="w3-text-grey">bermacam macam parian makanan ringan atau snack dengan rasa yang berbeda beda seperti gurih,pedas,manis, .dengan brand ternama dari bandung yaitu sentral snack dan ceres </p><br>
+
+                    <h5>minuman susu yogert cimori</h5>
+                    <p class="w3-text-grey">minuman sehat berkualitas dan brand ternama yaitu cimori , susu yogert yang teruji pada leb dan bersertifikat halal serta cocok untuk semua kalangan </p><br>
+
+                </div>
+
+                <div id="PahlawanDaerah" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>kripik pisang</h5>
+                    <p class="w3-text-grey">kripik pisang berparian rasa seperti manis,gurih dan seule pisang , renyah rasanya dan tidak keras untuk di makan oleh lansia </p><br>
+
+                    <h5>beralamat</h5>
+                    <p class="w3-text-grey">kp.cilebak rt/rw 03/03 Desa.Rancamanyar Kec.Baleendah Kab.Bandung Jawa Barat 40375</p><br>
+
+                    <h5>no telefon</h5>
+                    <p class="w3-text-grey">whatsapp : 083836381688</p><br>
+
+                    <h5>email </h5>
+                    <p class="w3-text-grey">email : kangsopiannetra@gmail.com </p><br>
+
+                </div>
+                <!--Di bawah ini ada gambar pahlawan secara umum, silakan ganti bagian yang diapit quote pada atribut src-->
+                <img alt="Gambar bermacam macam makanan ringan"
+                    src="barang.jpg"
+                    style="width:100%;max-width:1000px;margin-top:32px;">
+            </div>
+        </div>
+
+        <!-- Kontainer Pesan -->
+        <div class="w3-container" id="pesan" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Tuliskan orderan mu</span></h5>
+                <p>beli 10 parian yang berbeda gratis ongkir</p>
+                <!--Di bawah ini ada gambar pahlawan secara umum, silakan ganti bagian yang diapit quote pada atribut src-->
+                <img alt="Gambar masing masing parian makanan dan minuman"
+                    src="barang.jpg" class="w3-image"
+                    style="width:100%">
+                <p><span class="w3-tag">AYO!</span>kita jajan sehat</p>
+
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nama" required
+                            name="Nama"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Nama jenis makanan atau minuman"
+                            required name="Pahlawan"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local"
+                            placeholder="Tanggal dan Waktu" required name="Tanggal" value="1995-03-21T08:00"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text"
+                            placeholder="Pesan makanan atau minuman" required name="Pesan"></p>
+                    <p><button class="w3-button w3-black" type="submit">KIRIM PESAN</button></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">terimakasih telah berbelanja di toko saya , semoga tidak kapok dan terus berlangganan</a></p>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+
+</html>    
